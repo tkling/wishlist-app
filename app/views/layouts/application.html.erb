@@ -8,6 +8,20 @@
 </head>
 <body>
 
+<div class='navigation'>
+  <ul>
+    <li>
+      <%= link_to 'users', users_path %>
+    </li>
+    <li>
+      <%= link_to 'wishlists', wishlists_path %>
+    </li>
+    <li>
+      <%= link_to 'list items', list_items_path %>
+    </li>
+  </ul>
+</div>
+
 <%= yield %>
 
 </body>
