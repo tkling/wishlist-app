@@ -1,1 +1,1 @@
-json.extract! @wishlist, :title, :description, :owner, :created_at, :updated_at
+json.extract! @wishlist, :title, :description, :user_id, :created_at, :updated_at

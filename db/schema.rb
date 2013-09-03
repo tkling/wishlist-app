@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130903040504) do
+ActiveRecord::Schema.define(version: 20130903045701) do
 
   create_table "list_items", force: true do |t|
     t.string   "name"
@@ -34,10 +34,9 @@ ActiveRecord::Schema.define(version: 20130903040504) do
   create_table "wishlists", force: true do |t|
     t.string   "title"
     t.string   "description"
-    t.string   "owner"
+    t.string   "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "user_id"
   end
 
 end
