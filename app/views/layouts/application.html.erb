@@ -3,26 +3,38 @@
 <head>
   <title>App</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "bootstrap", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div class='navigation'>
-  <ul>
-    <li>
-      <%= link_to 'users', users_path %>
-    </li>
-    <li>
-      <%= link_to 'wishlists', wishlists_path %>
-    </li>
-    <li>
-      <%= link_to 'list items', list_items_path %>
-    </li>
-  </ul>
-</div>
+  <div class='navbar navbar-inverse'>
+    <div class='container'>
+      <div class='navbar navbar-inner'>
 
-<%= yield %>
+        <a class='brand' href='#'>wishlists!</a>
+        <ul class='nav'>
+          <li>
+            <%= link_to 'users', users_path %>
+          </li>
+          <li>
+            <%= link_to 'wishlists', wishlists_path %>
+          </li>
+          <li>
+            <%= link_to 'list items', list_items_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container">
+
+  <%= yield %>
+
+</div>
 
 </body>
 </html>

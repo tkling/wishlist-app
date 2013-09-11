@@ -1,14 +1,12 @@
-<h1>Listing wishlists</h1>
+<h1>all wishlists</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Title</th>
       <th>Description</th>
       <th>Owner ID</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th colspan='3'>Controls</th>
     </tr>
   </thead>
 
@@ -18,9 +16,9 @@
         <td><%= wishlist.title %></td>
         <td><%= wishlist.description %></td>
         <td><%= wishlist.user_id %></td>
-        <td><%= link_to 'Show', wishlist %></td>
-        <td><%= link_to 'Edit', edit_wishlist_path(wishlist) %></td>
-        <td><%= link_to 'Destroy', wishlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'show', wishlist %></td>
+        <td><%= link_to 'edit', edit_wishlist_path(wishlist) %></td>
+        <td><%= link_to 'destroy', wishlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Wishlist', new_wishlist_path %>
+<%= link_to 'new list', new_wishlist_path %>
