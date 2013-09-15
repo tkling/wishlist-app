@@ -1,6 +1,6 @@
-<h1>Listing list_items</h1>
+<h1>list items</h1>
 
-<table>
+<table class='table table-hover'>
   <thead>
     <tr>
       <th>Name</th>
@@ -20,9 +20,9 @@
         <td><%= list_item.url %></td>
         <td><%= list_item.notes %></td>
         <td><%= list_item.wishlist_id %></td>
-        <td><%= link_to 'Show', list_item %></td>
-        <td><%= link_to 'Edit', edit_list_item_path(list_item) %></td>
-        <td><%= link_to 'Destroy', list_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'show', list_item %></td>
+        <td><%= link_to 'edit', edit_list_item_path(list_item) %></td>
+        <td><%= link_to 'destroy', list_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New List item', new_list_item_path %>
+<%= link_to 'new list item', new_list_item_path %>

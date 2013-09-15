@@ -2,18 +2,18 @@
 <html>
 <head>
   <title>App</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag    "bootstrap", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "bootstrap-responsive", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <div class='navbar navbar-inverse'>
-    <div class='container'>
-      <div class='navbar navbar-inner'>
-
-        <a class='brand' href='#'>wishlists!</a>
+  <div class='navbar navbar-inverse navbar-fixed-top'>
+    <div class='navbar-inner'>
+      <div class='container'>
+        <a class='brand' href='/'>wishlists!</a>
         <ul class='nav'>
           <li>
             <%= link_to 'users', users_path %>
