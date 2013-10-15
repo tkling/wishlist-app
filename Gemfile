@@ -10,6 +10,7 @@ gem 'sqlite3', :group => [:development, :test]
 group :production do
   gem 'thin'
   gem 'pg'
+  gem 'newrelic_rpm'
 end
 
 # Use SCSS for stylesheets
